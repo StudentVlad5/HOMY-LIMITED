@@ -1,0 +1,34 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.message {
+  font-weight: 600;
+  font-size: large;
+}
+.alarm {
+  color: red;
+}
+
+.warning {
+  color: green;
+}

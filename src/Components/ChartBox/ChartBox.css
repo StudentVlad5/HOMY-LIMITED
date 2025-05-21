@@ -1,0 +1,22 @@
+.chartBoxContainer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+}
+
+.chartBoxContainer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  font-size: large;
+  font-weight: 400;
+}
+.chartBoxContainer .param {
+  font-size:x-large;
+  font-weight: 900;
+}

@@ -1,0 +1,52 @@
+.ballsContainer {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInScale 0.4s ease forwards;
+  opacity: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s ease, scale 0.3s ease;
+}
+
+.ball:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.ball.removing {
+  opacity: 1;
+  animation: removeInScale 0.4s ease forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes removeInScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+}
