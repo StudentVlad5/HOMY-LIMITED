@@ -12,8 +12,6 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 30px;
   margin-top: 40px;
   @media screen and (max-width: 780px) {
@@ -29,7 +27,7 @@ ul {
 
 .nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
   padding: 1rem;
   background-color: #f5f5f5;
   justify-content: center;
